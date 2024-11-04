@@ -48,5 +48,7 @@ for name, model in models:
 
 fig = plt.figure()
 fig.suptitle("Algorithm Comparison")
-ax = fig.add_subplot(111)
+axplot = fig.add_subplot(1, 1, 1)
+plt.boxplot(results)
+axplot.set_xticklabels(names)
 plt.show()
